@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/student_home"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jobPortal.activities.student.StudentHomeActivity" >
+
+    <TextView
+        android:id="@+id/textViewStudentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wecome user"
+        android:textColor="@color/list_item_title" />
+
+    <Button
+        android:id="@+id/btnUpdateStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudentUser"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="21dp"
+        android:onClick="updateUser"
+        android:text="@string/student_profile_update" />
+    
+     <Button
+        android:id="@+id/btnNotificationStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showNotifications"
+        android:layout_alignLeft="@+id/btnUpdateStudent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnUpdateStudent"
+        android:layout_marginTop="21dp"
+        android:text="Notifications" />
+     
+    
+     <Button
+        android:id="@+id/btnApplytoCompany"
+        android:onClick="showCompanyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNotificationStudent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnNotificationStudent"
+        android:layout_marginTop="21dp"
+        android:text="Apply => Companies" />
+     
+     <Button
+        android:id="@+id/btnLogout"
+        android:onClick="logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnApplytoCompany"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnApplytoCompany"
+        android:layout_marginTop="21dp"
+        android:text="Logout current user" />
+     
+     <Button
+        android:id="@+id/btnLogoutAndQuitApp"
+        android:onClick="logoutAndQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogout"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnLogout"
+        android:layout_marginTop="21dp"
+        android:text="Logout + Quit App" />
+
+     <TextView
+         android:id="@+id/textViewStatus"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/textViewStudentUser"
+         android:layout_alignRight="@+id/btnUpdateStudent"
+         android:text="Staus: "
+        android:textColor="@color/list_item_title"  />
+
+     <ProgressBar
+         android:id="@+id/progressBar_student"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btnLogoutAndQuitApp"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="33dp"
+         android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal"
+         android:indeterminateOnly="false"
+         android:maxHeight="24dip"
+         android:minHeight="24dip"/>
+
+</RelativeLayout>

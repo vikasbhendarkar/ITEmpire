@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Campus Recruitment System</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="exit_message">Do you want to Exit CAMPUS RECRUITMENT SYSTEM ?</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Admin Login</item>
+        <item>Company Login</item>
+        <item>Student Login</item>
+        <item>About</item>
+    </string-array>
+
+    <!-- Student Qualification Items -->
+    <string-array name="student_qualification_items">
+        <item>BCA</item>
+        <item>B.Sc.</item>
+        <item>M.Sc.</item>
+        <item>MCA</item>
+        <item>BE in CSE</item>
+        <item>BE in ME</item>
+        <item>BE in IT</item>
+        <item>BE in CHE</item>
+        <item>BE in EE</item>
+        <item>BE in ETE</item>
+        <item>BE in Civil</item>
+        <item>M.Tec.</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- Student current year Items -->
+    <string-array name="student_current_year_items">
+        <item>1st year</item>
+        <item>2nd year</item>
+        <item>3rd year</item>
+        <item>Final year</item>
+    </string-array>
+
+    <!-- Company package Items -->
+    <string-array name="company_package_items">
+        <item>Less than Rs.1,00,000</item>
+        <item>Rs.1,00,000 - Rs.5,00000</item>
+        <item>Rs.5,00,000 - Rs.10,00,000</item>
+        <item>Rs.10,00,000 - Rs.20,00,000</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_admin_main">Admin [Login]</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_company_register">Company Registration</string>
+    <string name="title_activity_company_main">Company [Login]</string>
+    <string name="title_activity_student_main">Student [Login]</string>
+    <string name="title_activity_student_register">Student Registration</string>
+    <string name="title_activity_admin_home">Admin [Home]</string>
+    <string name="title_activity_student_list">Students List</string>
+    <string name="title_activity_student_detail">Student Detail</string>
+    <string name="title_activity_company_list">Company List</string>
+    <string name="title_activity_student_info">Student Information</string>
+    <string name="title_activity_company_info">Company Information</string>
+    <string name="title_activity_student_home">Student [Home]</string>
+    <string name="title_activity_company_home">Company [Home]</string>
+    <string name="title_activity_student_profile">Student Profile</string>
+    <string name="title_activity_company_profile">Company Profile</string>
+
+    <!-- Company Description -->
+    <string name="cmny_name">Full Name of Company</string>
+    <string name="cmny_email">Enter email id: </string>
+    <string name="del_cmny">Delete >> Company</string>
+    <string name="do_placement">Date of Placement</string>
+    <string name="salary_package">Salary Package</string>
+    <string name="do_registration">Date of Registration</string>
+    <string name="act_status">Activation Status</string>
+
+    <!-- Student Description -->
+    <string name="student_key_generation">Put Generated key here:</string>
+	<string name="stud_email">Enter Raisoni email id: </string>
+	
+    <!-- Common Description -->
+    <string name="register">REGISTER</string>
+    <string name="password">Password</string>
+    <string name="repassword">Re-type Password</string>
+    <string name="already_registered">Already registred. Login Me!</string>
+    <string name="student_profile_update">Profile Updation</string>
+    <string name="title_activity_job_list">List of Available Jobs</string>
+    <string name="title_activity_filter_for_students">Filter Panel</string>
+    <string name="title_activity_student_details">StudentDetails</string>
+    <string name="title_activity_company_detail">Company Detail</string>
+    <string name="title_activity_notifications">Notifications</string>
+
+</resources>

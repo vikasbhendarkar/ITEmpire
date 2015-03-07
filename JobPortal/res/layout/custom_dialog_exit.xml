@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#222"
+    android:orientation="vertical"
+    android:padding="8dip" >
+
+    <LinearLayout
+        android:id="@+id/mExitDialogDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mExitDialogMessage"
+            android:text="@string/exit_message"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:typeface="serif"
+            android:layout_gravity="center" 
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mExitDialogTitleBorder"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/mExitDialogDesc"
+        android:orientation="horizontal"
+        android:background="#4BBAE3" 
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mExitDialogTitleBorder"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="15dip"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/mYesExitDialog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/green"
+                android:text="Yes"
+                android:textColor="#fff"
+                android:textSize="19dip"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/mNoExitDialog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/red"
+                android:text="No"
+                android:textColor="#fff"
+                android:textSize="19dip"
+                android:typeface="serif" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

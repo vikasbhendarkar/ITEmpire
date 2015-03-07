@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/student_home"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jobPortal.activities.company.CompanyHomeActivity" >
+
+    <TextView
+        android:id="@+id/textViewCompanyUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wecome user"
+        android:textColor="@color/list_item_title" />
+
+    <Button
+        android:id="@+id/btnUpdateCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCompanyUser"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="21dp"
+        android:onClick="updateUser"
+        android:text="@string/student_profile_update" />
+    
+    <Button
+        android:id="@+id/btnNotificationCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showNotifications"
+        android:layout_alignLeft="@+id/btnUpdateCompany"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnUpdateCompany"
+        android:layout_marginTop="21dp"
+        android:text="Notifications" />
+    
+    <Button
+        android:id="@+id/btnSaveSearchFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNotificationCompany"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnNotificationCompany"
+        android:layout_marginTop="21dp"
+        android:onClick="saveSearchFilter"
+        android:text="Search Filter" />
+    
+     <Button
+        android:id="@+id/btnApplytoStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showStudentsList"
+        android:layout_alignLeft="@+id/btnSaveSearchFilter"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnSaveSearchFilter"
+        android:layout_marginTop="21dp"
+        android:text="Accept => Students" />
+     
+     <Button
+        android:id="@+id/btnLogout"
+        android:onClick="logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnApplytoStudent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnApplytoStudent"
+        android:layout_marginTop="21dp"
+        android:text="Logout current user" />
+     
+     <Button
+        android:id="@+id/btnLogoutAndQuitApp"
+        android:onClick="logoutAndQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogout"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnLogout"
+        android:layout_marginTop="21dp"
+        android:text="Logout + Quit App" />
+     
+     <TextView
+         android:id="@+id/textViewCmnyStatus"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/textViewCompanyUser"
+         android:layout_alignRight="@+id/btnUpdateCompany"
+         android:text="Staus: "
+        android:textColor="@color/list_item_title"  />
+
+    <ProgressBar
+        android:id="@+id/progressBar_company"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogoutAndQuitApp"
+        android:layout_below="@+id/btnLogoutAndQuitApp"
+        android:indeterminateOnly="false"
+        android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal" />
+
+</RelativeLayout>

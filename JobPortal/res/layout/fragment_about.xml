@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/screen_bg"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@+android:drawable/dialog_holo_light_frame"
+            android:orientation="vertical"
+            android:padding="20.0dip" >
+
+            <com.jobPortal.library.ArialTextView
+                android:id="@id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/progress_gray"
+                android:paddingBottom="3.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingTop="3.0dip"
+                android:text="CAMPUS RECRUITMENT SYSTEM"
+                android:textColor="@+android:color/black"
+                android:textSize="20.0sp" />
+
+            <com.jobPortal.library.ArialTextView
+                android:id="@id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/progress_gray"
+                android:paddingBottom="3.0dip"
+                android:paddingLeft="5.0dip"
+                android:text="App Version : 5.2.0" />
+
+            <com.jobPortal.library.ArialTextView
+                android:id="@id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:text="The Campus Recruitment System is developed by Raisoni's final year students for managing the recruitment process.\n\nWe always strive to develop innovative product considering usability.\n\nPlease give your important feedbacks and rating."
+                android:textColor="#ff6e6e6e"
+                android:typeface="sans" />
+
+            <com.jobPortal.library.ArialTextView
+                android:id="@id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Support :\nFor any support ,queries and improvements related to this app please contact andro.crt@gmail.com "
+                android:textColor="@+android:color/black"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/shareApp"
+                style="@+style/custom_style_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:text="Share App with friends" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:background="#ff0b4c5f" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/test_frame"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iconImageView_Student"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/qualification"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/company" />
+
+    <TextView
+        android:id="@+id/student_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iconImageView_Student"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="PERSISTENT SYS LTD"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/transparent"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date_of_placement_student_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/student_company_name"
+        android:layout_below="@+id/student_company_name"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="2nd Jan 2015"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/list_divider"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+		android:focusableInTouchMode="false"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
